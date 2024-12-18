@@ -3,7 +3,7 @@ import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 import { useSession } from '../ctx';
 import { useState } from 'react';
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 
 export default function SignIn() {
     const { signIn } = useSession();
