@@ -54,5 +54,8 @@ exports.login = async (req, res) => {
     res.json({ token: user.token, role: 'sinhvien' });
 };
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 4670c94cffab996c5a2992d5c3232293d8065ba6
