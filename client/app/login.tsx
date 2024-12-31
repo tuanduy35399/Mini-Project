@@ -14,7 +14,7 @@ export default function SignIn() {
     const handleLogin = async () => {
         setIsLoading(true);
         try {
-            const response = await axios.post('http://192.168.0.105:3000/api/sinhvien/login', { username, password });
+            const response = await axios.post('http://192.168.1.131:3000/api/sinhvien/login', { username, password });
             if (response.data.token) {
                 signIn(response.data.token);
                 Alert.alert("Đăng nhập thành công!");

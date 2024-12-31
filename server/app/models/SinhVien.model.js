@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
-const md5 = require('md5');
 
-const sinhvienSchema = new mongoose.Schema({
+const sinhVienSchema = new mongoose.Schema({
     MSSV: {
         type: String,
         required: true,
@@ -21,11 +20,4 @@ const sinhvienSchema = new mongoose.Schema({
     token: String,
 });
 
-// sinhvienSchema.pre("save", async function (next) {
-//     if (this.isModified("MATKHAU")) {
-//         this.MATKHAU = md5(MATKHAU);
-//     }
-//     next();
-// });
-
-module.exports = mongoose.model("SinhVien", sinhvienSchema, "SINHVIEN");
+module.exports = mongoose.model("SinhVien", sinhVienSchema, "SINHVIEN");

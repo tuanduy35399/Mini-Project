@@ -14,3 +14,5 @@ app.get("/", (req, res) => {
 app.use("/api/sinhvien", sinhvienRouter);
 
 module.exports = app;
+
+
